@@ -11,14 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+p{
+  text-align: center;
+}
 img{
   width: 200px;
   height: 200px;
+  margin-top: 20px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid aquamarine;
 }
 a{
+  margin:20px 10px;
   padding: 15px 20px;
   border: 0.5px solid rgba(0,0,0,0.9);
   border-radius: 4px;
@@ -44,11 +49,18 @@ a{
 .card{
   width: 100%;
   max-width: 500px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background-color:rgba(66, 238, 247, 0.8);
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.1);
+  background-color:rgba(255,255 255, 0.2);
+}
+
+
+.card__body{
+  padding: 0 20px;
+
 }
