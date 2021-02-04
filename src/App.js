@@ -19,7 +19,7 @@ function App() {
           <div className="card__body">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illo itaque in sint vel fugit.</p>
           </div>
-          <a href={web} target="_blank" rel="noopener noreferrer">More about me</a>
+          <a href={web} target="_blank" rel="noopener noreferrer" className ="primaryButton">More about me</a>
         </div>
       </div>
 

@@ -15,6 +15,55 @@ p{
   text-align: center;
 }
 
+button {
+  font-weight: 300;
+  padding: 10px 12px;
+  margin: 20px auto;
+  outline: none;
+  border: 0.2px solid #444;
+  border-radius: 4px;
+  color:#000;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all, 0.75s ease-in-out;
+}
+button:hover{
+  transform: scale(0.98);
+  border: none;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.primaryButton{
+  font-weight: 300;
+  padding: 10px 12px;
+  margin: 20px auto;
+  outline: none;
+  border: 0.2px solid darkcyan;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all,
+  0.75s ease-in-out;
+}
+
+  .primaryButton:hover {
+    transform: scale(0.98);
+    border: none;
+    color: #fff;
+    background-color: darkcyan;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+
+  }
+  .deleteButton{
+    border-color: rgba(255, 0, 0, 0.4);
+
+  }
+
+  .deleteButton:hover {
+    color:#fff;
+    background-color: rgba(255, 0, 0, 0.9);
+  }
+
+
 
 
 
@@ -47,6 +96,11 @@ p{
   color: darkcyan;
 }
 
+.navbar .primaryButton:hover{
+  color:#fff;
+
+}
+
 .content{
   max-width: 600px;
   margin: 40px auto;
@@ -65,23 +119,37 @@ p{
   flex-direction: column;
 }
 
+.home h2{
+  font-size: 28px;
+  text-align: center;
+}
+
 /* blog preview  / list  */
 
-.blog-prev{
+.blog-preview{
+  display: grid;
+  place-items: center;
   padding: 10px 16px;
   margin: 20px 0;
+  border-radius: 4px;
   border-bottom: 1px solid #fafafa;
+  transition: all 0.75s ease-in-out;
 }
 
-.blog-prev:hover{
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
 }
-.blog-prev h2{
+.blog-preview h2{
   font-size: 20px;
   color: darkcyan;
   margin: 10px;
+}
+.blog-preview button{
 
 }
+
+
 
 /* === card === */
 
@@ -96,6 +164,13 @@ p{
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.1);
   background-color:rgba(255,255 255, 0.2);
+  transition: all 0.75s ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
+
 }
 
 .card__header{
@@ -119,12 +194,13 @@ p{
 .card a{
   text-decoration: none;
   margin: 20px auto;
-  padding: 10px 16px;
+  padding: 15px 20px;
   border: 0.5 solid #333;
   border-radius: 4px;
-  transition: all .6s ease-in-out;
+  transition: all .75s ease-in-out;
 }
 .card a:hover{
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
   border: none;
   background-color: darkcyan;
   color: #fff;
