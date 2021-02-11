@@ -25,9 +25,9 @@ button {
   color:#000;
   background-color: #fff;
   cursor: pointer;
-  transition: all, 0.75s ease-in-out;
+  transition: all, 0.5s ease-in-out;
 }
-button:hover{
+button:focus{
   transform: scale(0.98);
   border: none;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
@@ -42,7 +42,7 @@ button:hover{
   border-radius: 4px;
   cursor: pointer;
   transition: all,
-  0.75s ease-in-out;
+  0.5s ease-in-out;
 }
 
   .primaryButton:hover {
@@ -109,51 +109,10 @@ button:hover{
   place-items: center;
 }
 
-/* === home=== */
-
-.home{
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.home h2{
-  font-size: 28px;
-  text-align: center;
-}
-
-/* blog preview  / list  */
-
-.blog-preview{
-  display: grid;
-  place-items: center;
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-radius: 4px;
-  border-bottom: 1px solid #fafafa;
-  transition: all 0.75s ease-in-out;
-}
-
-.blog-preview:hover{
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
-}
-.blog-preview h2{
-  font-size: 20px;
-  color: darkcyan;
-  margin: 10px;
-}
-.blog-preview button{
-
-}
-
-
 
 /* === card === */
 
-.card{
+.card {
   width: 100%;
   max-width: 500px;
   padding-bottom: 40px;
@@ -163,17 +122,16 @@ button:hover{
   align-items: center;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.1);
-  background-color:rgba(255,255 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   transition: all 0.75s ease-in-out;
 }
 
-.card:hover{
-  transform: scale(1.02);
-  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
+.card:hover {
+  box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.4);
 
 }
 
-.card__header{
+.card__header {
   margin-bottom: 20px;
 }
 
@@ -186,23 +144,68 @@ button:hover{
   border: 5px solid aquamarine;
 }
 
-.card__body{
+.card__body {
   padding: 0 20px;
 
 }
 
-.card a{
+.card a {
   text-decoration: none;
   margin: 20px auto;
   padding: 15px 20px;
   border: 0.5 solid #333;
   border-radius: 4px;
-  transition: all .75s ease-in-out;
+  transition: all .5s ease-in-out;
 }
-.card a:hover{
-  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
+
+.card a:hover {
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.4);
   border: none;
   background-color: darkcyan;
   color: #fff;
 
 }
+
+
+/* === home=== */
+
+.home {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home h2{
+  font-size: 28px;
+  text-align: center;
+}
+
+
+/* blog preview  / list  */
+
+.blog-preview{
+  width: 100%;
+  min-width: 300px;
+  display: grid;
+  place-items: center;
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-radius: 4px;
+  border-bottom: 1px solid #fafafa;
+  transition: all 0.5s ease-in-out;
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+  /* transform: scale(1.02); */
+}
+.blog-preview h2{
+  font-size: 20px;
+  color: darkcyan;
+  margin: 10px;
+}
+
+
